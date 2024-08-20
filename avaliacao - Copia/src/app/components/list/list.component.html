@@ -1,0 +1,16 @@
+<table id="list">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Data Nascimento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let obj of listArr">
+            <td>{{ obj["name"] }}</td>
+            <td>{{ obj["cpf"] }}</td>
+            <td>{{ obj["nasc"] }}</td>
+        </tr>
+    </tbody>
+</table>

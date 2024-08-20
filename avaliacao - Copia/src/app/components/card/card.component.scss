@@ -1,0 +1,17 @@
+mat-card-content {
+    margin-top: 1rem;
+}
+
+mat-card-title {
+    font-family: "Open Sans", sans-serif;
+}
+
+mat-card-footer {
+    padding: 0 0 16px 16px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}

@@ -1,0 +1,24 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Formulário</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form>
+            <mat-form-field>
+                <mat-label>Nome</mat-label>
+                <input matInput type="text" [(ngModel)]="user.name" name="name">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>CPF</mat-label>
+                <input matInput type="text" [(ngModel)]="user.cpf" name="cpf">
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Data Nascimento</mat-label>
+                <input matInput type="date" [(ngModel)]="user.nasc" name="nasc">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-footer>
+        <button mat-raised-button (click)="submit()">Enviar</button>
+    </mat-card-footer>
+</mat-card>
